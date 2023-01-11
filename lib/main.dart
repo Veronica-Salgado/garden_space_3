@@ -14,56 +14,57 @@ void main() => runApp(MaterialApp(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               const Spacer(
-                flex: 2,
+                flex: 4,
               ),
               Text(
-                'Garden Space',
+                'Create Account',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
                   color: Colors.teal.shade600,
                 ),
               ), //Garden Space
-              Text(
-                'Log In',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25,
-                  color: Colors.teal.shade600,
-                ),
-              ), //Log In
               const Spacer(
-                flex: 2,
+                flex: 4,
               ),
               TextField(
                   style: TextStyle(color: Colors.teal.shade100),
                   decoration:
-                      const InputDecoration(labelText: 'Email or Username')),
+                      const InputDecoration(labelText: 'Enter your Username')),
               const Spacer(),
               const TextField(
                 decoration: InputDecoration(
-                  labelText: 'Password',
+                  labelText: 'Enter your Email',
                 ),
               ),
               const Spacer(),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Log In'),
+              TextField(
+                style: TextStyle(color: Colors.teal.shade100),
+                decoration:
+                    const InputDecoration(labelText: 'Enter Your Phone Number'),
               ),
               const Spacer(),
-              TextButton(
+              TextField(
+                style: TextStyle(color: Colors.teal.shade100),
+                decoration:
+                    const InputDecoration(labelText: 'Enter Your Password'),
+              ),
+              const Spacer(
+                flex: 4,
+              ),
+              ElevatedButton(
                 onPressed: () {},
                 child: const Text('Sign Up'),
-              ), //Sign Up
-              const Spacer(),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Log in with Google'),
               ),
               const Spacer(),
               ElevatedButton(
                 onPressed: () {},
-                child: const Text('Log in With Facebook'),
+                child: const Text('Sign up with Google'),
+              ),
+              const Spacer(),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text('Sign up With Facebook'),
               ),
               const Spacer()
             ],
