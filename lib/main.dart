@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:helloworld/create_account.dart';
 import 'package:helloworld/login_screen.dart';
 import 'package:helloworld/home.dart';
+import 'package:helloworld/plant_space.dart';
+import 'package:helloworld/Fruit.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData.dark().copyWith(
@@ -21,5 +23,7 @@ void main() => runApp(MaterialApp(
         '/': (context) => const LogInScreen(),
         '/second': (context) => const CreateAccount(),
         '/third': (context) => const Home(),
+        '/fourth': (context) => const PlantSpace(),
+        '/fifth': (context) => const Fruit(),
       },
     ));

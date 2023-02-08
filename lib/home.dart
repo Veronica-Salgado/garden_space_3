@@ -28,7 +28,9 @@ class Home extends StatelessWidget {
                         ),
                         Spacer(flex: 5),
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/fourth');
+                          },
                           icon: Icon(Icons.library_books_outlined),
                           color: Colors.white,
                           iconSize: 24.0,
