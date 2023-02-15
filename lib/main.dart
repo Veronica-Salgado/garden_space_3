@@ -3,7 +3,8 @@ import 'package:helloworld/create_account.dart';
 import 'package:helloworld/login_screen.dart';
 import 'package:helloworld/home.dart';
 import 'package:helloworld/plant_space.dart';
-import 'package:helloworld/Fruit.dart';
+import 'package:helloworld/fruit.dart';
+import 'package:helloworld/menu.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData.dark().copyWith(
@@ -25,5 +26,6 @@ void main() => runApp(MaterialApp(
         '/third': (context) => const Home(),
         '/fourth': (context) => const PlantSpace(),
         '/fifth': (context) => const Fruit(),
+        '/sixth': (context) => const Menu(),
       },
     ));

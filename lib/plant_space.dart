@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/Fruit.dart';
+import 'package:helloworld/fruit.dart';
 import 'package:helloworld/fruit_plant_space.dart';
-import 'package:helloworld/home.dart';
 
 class PlantSpace extends StatelessWidget {
   const PlantSpace({Key? key}) : super(key: key);
@@ -20,26 +19,28 @@ class PlantSpace extends StatelessWidget {
       FruitPlantSpace(
           index: 5, imageName: 'images/Foilage2.jpg', target: Fruit()),
     ];
-    return Scaffold(
-        appBar: AppBar(
-          title: const Text('Plant Space'),
-          actions: <Widget>[
-            IconButton(
-                onPressed: () {}, icon: const Icon(Icons.search_outlined)),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.photo_camera_outlined)),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.home_outlined)),
-          ],
-        ),
-        backgroundColor: Colors.black,
-        body: Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: GridView.count(
-              shrinkWrap: true,
-              scrollDirection: Axis.vertical,
-              crossAxisCount: 2,
-              children: fruitList,
-            )));
+    return SafeArea(
+        child: Scaffold(
+            appBar: AppBar(
+              title: const Text('Plant Space'),
+              actions: <Widget>[
+                IconButton(
+                    onPressed: () {}, icon: const Icon(Icons.search_outlined)),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.photo_camera_outlined)),
+                IconButton(
+                    onPressed: () {}, icon: const Icon(Icons.home_outlined)),
+              ],
+            ),
+            backgroundColor: Colors.black,
+            body: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: GridView.count(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.vertical,
+                  crossAxisCount: 2,
+                  children: fruitList,
+                ))));
   }
 }
