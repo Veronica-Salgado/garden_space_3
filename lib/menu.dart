@@ -25,24 +25,34 @@ class Menu extends StatelessWidget {
             InkWell(
                 splashColor: Colors.teal.shade600,
                 onTap: () {},
-                child: const Card(
+                child: Card(
                   color: Colors.black,
                   child: ListTile(
-                    title: Text('Profile'),
+                    title: Text('Profile',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal.shade100,
+                        )),
                     trailing: Icon(
                       Icons.chevron_right_outlined,
+                      color: Colors.teal.shade600,
                     ),
                   ),
                 )),
             InkWell(
                 splashColor: Colors.teal.shade600,
                 onTap: () {},
-                child: const Card(
+                child: Card(
                   color: Colors.black,
                   child: ListTile(
-                    title: Text('Calander'),
+                    title: Text('Calander',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal.shade100,
+                        )),
                     trailing: Icon(
                       Icons.chevron_right_outlined,
+                      color: Colors.teal.shade600,
                     ),
                   ),
                 )),
@@ -51,72 +61,100 @@ class Menu extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, '/fourth');
               },
-              child: const Card(
+              child: Card(
                 color: Colors.black,
                 child: ListTile(
-                    title: Text('Plant Space'),
+                    title: Text('Plant Space',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal.shade100,
+                        )),
                     trailing: Icon(
                       Icons.chevron_right_outlined,
+                      color: Colors.teal.shade600,
                     )),
               ),
             ),
             InkWell(
                 splashColor: Colors.teal.shade600,
                 onTap: () {},
-                child: const Card(
+                child: Card(
                   color: Colors.black,
                   child: ListTile(
-                    title: Text('Messages'),
+                    title: Text('Messages',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal.shade100,
+                        )),
                     trailing: Icon(
                       Icons.chevron_right_outlined,
+                      color: Colors.teal.shade600,
                     ),
                   ),
                 )),
             InkWell(
                 splashColor: Colors.teal.shade600,
                 onTap: () {},
-                child: const Card(
+                child: Card(
                   color: Colors.black,
                   child: ListTile(
-                    title: Text('Garden Space'),
+                    title: Text('Garden Space',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal.shade100,
+                        )),
                     trailing: Icon(
                       Icons.chevron_right_outlined,
+                      color: Colors.teal.shade600,
                     ),
                   ),
                 )),
             InkWell(
                 splashColor: Colors.teal.shade600,
                 onTap: () {},
-                child: const Card(
+                child: Card(
                   color: Colors.black,
                   child: ListTile(
-                    title: Text('Specifications'),
+                    title: Text('Specifications',
+                        style: TextStyle(
+                            fontSize: 20, color: Colors.teal.shade100)),
                     trailing: Icon(
                       Icons.chevron_right_outlined,
+                      color: Colors.teal.shade600,
                     ),
                   ),
                 )),
             InkWell(
                 splashColor: Colors.teal.shade600,
                 onTap: () {},
-                child: const Card(
+                child: Card(
                   color: Colors.black,
                   child: ListTile(
-                    title: Text('Help'),
+                    title: Text('Help',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal.shade100,
+                        )),
                     trailing: Icon(
                       Icons.chevron_right_outlined,
+                      color: Colors.teal.shade600,
                     ),
                   ),
                 )),
             InkWell(
                 splashColor: Colors.teal.shade600,
-                onTap: () {},
-                child: const Card(
+                onTap: () {
+                  Navigator.pushNamed(context, '/seventh');
+                },
+                child: Card(
                   color: Colors.black,
                   child: ListTile(
-                    title: Text('Settings'),
+                    title: Text('Settings',
+                        style: TextStyle(
+                            fontSize: 20, color: Colors.teal.shade100)),
                     trailing: Icon(
                       Icons.chevron_right_outlined,
+                      color: Colors.teal.shade600,
                     ),
                   ),
                 )),
