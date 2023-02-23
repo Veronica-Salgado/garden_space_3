@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/fruit.dart';
+import 'package:helloworld/fruit_list.dart';
 import 'package:helloworld/fruit_plant_space.dart';
+import 'package:helloworld/vegetable_list.dart';
+import 'package:helloworld/flower_list.dart';
 
 class PlantSpace extends StatelessWidget {
   const PlantSpace({Key? key}) : super(key: key);
@@ -8,14 +11,17 @@ class PlantSpace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<FruitPlantSpace> fruitList = const [
-      FruitPlantSpace(index: 0, imageName: 'images/Fruit.jpg', target: Fruit()),
       FruitPlantSpace(
-          index: 1, imageName: 'images/Vegetables.jpg', target: Fruit()),
+          index: 0, imageName: 'images/Fruit.jpg', target: FruitList()),
+      FruitPlantSpace(
+          index: 1,
+          imageName: 'images/Vegetables.jpg',
+          target: VegetableList()),
       FruitPlantSpace(
           index: 1, imageName: 'images/Succulents.jpg', target: Fruit()),
       FruitPlantSpace(index: 3, imageName: 'images/Herbs.jpg', target: Fruit()),
       FruitPlantSpace(
-          index: 4, imageName: 'images/Flowers.jpg', target: Fruit()),
+          index: 4, imageName: 'images/Flowers.jpg', target: FlowerList()),
       FruitPlantSpace(
           index: 5, imageName: 'images/Foilage2.jpg', target: Fruit()),
     ];

@@ -6,6 +6,9 @@ import 'package:helloworld/plant_space.dart';
 import 'package:helloworld/fruit.dart';
 import 'package:helloworld/menu.dart';
 import 'package:helloworld/settings.dart';
+import 'package:helloworld/fruit_list.dart';
+import 'package:helloworld/vegetable_list.dart';
+import 'package:helloworld/flower_list.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData.dark().copyWith(
@@ -29,5 +32,8 @@ void main() => runApp(MaterialApp(
         '/fifth': (context) => const Fruit(),
         '/sixth': (context) => const Menu(),
         '/seventh': (context) => const Settings(),
+        '/eigth': (context) => const FruitList(),
+        '/ninth': (context) => const VegetableList(),
+        '/tenth': (context) => const FlowerList(),
       },
     ));
