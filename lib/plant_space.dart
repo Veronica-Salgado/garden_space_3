@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/foilage_list.dart';
 import 'package:helloworld/fruit.dart';
 import 'package:helloworld/fruit_list.dart';
 import 'package:helloworld/fruit_plant_space.dart';
+import 'package:helloworld/herb_list.dart';
+import 'package:helloworld/succulent_list.dart';
 import 'package:helloworld/vegetable_list.dart';
 import 'package:helloworld/flower_list.dart';
 
@@ -18,16 +21,20 @@ class PlantSpace extends StatelessWidget {
           imageName: 'images/Vegetables.jpg',
           target: VegetableList()),
       FruitPlantSpace(
-          index: 1, imageName: 'images/Succulents.jpg', target: Fruit()),
-      FruitPlantSpace(index: 3, imageName: 'images/Herbs.jpg', target: Fruit()),
+          index: 2,
+          imageName: 'images/Succulents.jpg',
+          target: SucculentList()),
       FruitPlantSpace(
-          index: 4, imageName: 'images/Flowers.jpg', target: FlowerList()),
+          index: 3, imageName: 'images/Herbs.jpg', target: HerbList()),
       FruitPlantSpace(
-          index: 5, imageName: 'images/Foilage2.jpg', target: Fruit()),
+          index: 3, imageName: 'images/Flowers.jpg', target: FlowerList()),
+      FruitPlantSpace(
+          index: 4, imageName: 'images/Foilage2.jpg', target: FoilageList()),
     ];
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
+              backgroundColor: Colors.black,
               title: const Text('Plant Space'),
               actions: <Widget>[
                 IconButton(

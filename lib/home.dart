@@ -40,7 +40,9 @@ class Home extends StatelessWidget {
                             ),
                             Spacer(flex: 1), //Library
                             IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, '/eleventh');
+                              },
                               icon: Icon(Icons.add),
                               color: Colors.white,
                               iconSize: 24.0,

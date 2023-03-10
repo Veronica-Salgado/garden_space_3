@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/create_account.dart';
+import 'package:helloworld/add_garden_space.dart';
 import 'package:helloworld/login_screen.dart';
 import 'package:helloworld/home.dart';
 import 'package:helloworld/plant_space.dart';
@@ -8,7 +9,7 @@ import 'package:helloworld/menu.dart';
 import 'package:helloworld/settings.dart';
 import 'package:helloworld/fruit_list.dart';
 import 'package:helloworld/vegetable_list.dart';
-import 'package:helloworld/flower_list.dart';
+import 'package:helloworld/additional_info.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData.dark().copyWith(
@@ -34,6 +35,7 @@ void main() => runApp(MaterialApp(
         '/seventh': (context) => const Settings(),
         '/eigth': (context) => const FruitList(),
         '/ninth': (context) => const VegetableList(),
-        '/tenth': (context) => const FlowerList(),
+        '/tenth': (context) => const AdditionalInformation(),
+        '/eleventh': (context) => const AddGardenSpace(),
       },
     ));

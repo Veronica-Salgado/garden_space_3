@@ -52,8 +52,10 @@ class CreateAccount extends StatelessWidget {
               flex: 4,
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: const Text('Sign Up'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/tenth');
+              },
+              child: const Text('Next'),
             ),
             const Spacer(),
             ElevatedButton(
