@@ -9,6 +9,7 @@ class FruitList extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
+          backgroundColor: Colors.black,
           title: const Text('Fruit List',
               style: TextStyle(
                 fontSize: 20,

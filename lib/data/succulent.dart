@@ -1,0 +1,20 @@
+// list of 1000 common succulents
+List<String> succulentList = [
+  "Burro's Tail",
+  "Echeveria",
+  "Fairy Wings",
+  "Flaming Katy",
+  "Gasteria",
+  "Haworthia",
+  "Hens and Chicks",
+  "Hoya",
+  "Jade Plant",
+  "Kalanchoe",
+  "Mother of Thousands",
+  "Panda Plant",
+  "Sedum",
+  "Trailing Jade",
+  "Umbrella Plant",
+  "Venus Flytrap",
+  "Zebra Plant",
+];

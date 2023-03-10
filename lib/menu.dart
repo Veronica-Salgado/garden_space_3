@@ -9,6 +9,7 @@ class Menu extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
+          backgroundColor: Colors.black,
           title: const Text('Menu'),
           actions: <Widget>[
             IconButton(
