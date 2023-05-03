@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/data/succulent.dart';
+import 'package:helloworld/data/succulent_data.dart';
+import 'package:helloworld/succulent_detail.dart';
 
 class SucculentList extends StatelessWidget {
   const SucculentList({Key? key}) : super(key: key);
@@ -31,12 +32,16 @@ class SucculentList extends StatelessWidget {
             return InkWell(
                 splashColor: Colors.teal.shade600,
                 onTap: () {
-                  Navigator.pushNamed(context, '/fifth');
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              SucculentDetail(succulentList[index])));
                 },
                 child: Card(
                   color: Colors.black,
                   child: ListTile(
-                    title: Text(succulentList[index],
+                    title: Text(succulentList[index].name,
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.teal.shade100,

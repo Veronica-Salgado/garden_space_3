@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/garden_space_detail.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -25,7 +26,12 @@ class Menu extends StatelessWidget {
           children: <Widget>[
             InkWell(
                 splashColor: Colors.teal.shade600,
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const GardenSpaceDetail()));
+                },
                 child: Card(
                   color: Colors.black,
                   child: ListTile(

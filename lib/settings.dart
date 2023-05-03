@@ -28,7 +28,9 @@ class Settings extends StatelessWidget {
           children: <Widget>[
             InkWell(
                 splashColor: Colors.teal.shade600,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/twelfth');
+                },
                 child: Card(
                   color: Colors.black,
                   child: ListTile(

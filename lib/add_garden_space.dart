@@ -15,11 +15,7 @@ class AddGardenSpace extends StatelessWidget {
           backgroundColor: Colors.black,
           title: const Text('Add Garden Space'),
           actions: <Widget>[
-            IconButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/third');
-                },
-                icon: const Icon(Icons.done_outlined)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.done_outlined)),
           ],
         ),
         body: Padding(
