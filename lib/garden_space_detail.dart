@@ -116,7 +116,7 @@ class GardenSpaceDetail extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                  height: 20,
+                  height: 40,
                   child: Stack(children: <Widget>[
                     Positioned.fill(
                       child: Container(
@@ -147,7 +147,7 @@ class GardenSpaceDetail extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                  height: 20,
+                  height: 40,
                   child: Stack(children: <Widget>[
                     Positioned.fill(
                       child: Container(
@@ -178,7 +178,7 @@ class GardenSpaceDetail extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                  height: 20,
+                  height: 40,
                   child: Stack(children: <Widget>[
                     Positioned.fill(
                       child: Container(
@@ -209,7 +209,7 @@ class GardenSpaceDetail extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                  height: 20,
+                  height: 40,
                   child: Stack(children: <Widget>[
                     Positioned.fill(
                       child: Container(
@@ -240,7 +240,7 @@ class GardenSpaceDetail extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                  height: 20,
+                  height: 40,
                   child: Stack(children: <Widget>[
                     Positioned.fill(
                       child: Container(
@@ -271,7 +271,7 @@ class GardenSpaceDetail extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                  height: 20,
+                  height: 40,
                   child: Stack(children: <Widget>[
                     Positioned.fill(
                       child: Container(
@@ -302,7 +302,7 @@ class GardenSpaceDetail extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                  height: 20,
+                  height: 40,
                   child: Stack(children: <Widget>[
                     Positioned.fill(
                       child: Container(
